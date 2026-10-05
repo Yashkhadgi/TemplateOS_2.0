@@ -1,0 +1,20 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+sqlalchemy==2.0.36
+alembic==1.14.0
+pydantic==2.9.2
+pydantic-settings==2.6.1
+psycopg[binary]==3.2.3
+python-dotenv==1.0.1
+PyJWT==2.10.1
+pwdlib[argon2]==0.2.1
+email-validator==2.2.0
+python-multipart==0.0.20
+docxtpl==0.20.2
+python-docx==1.1.2
+# AI features only (V1.3 Phase 4+): Bedrock via the Anthropic SDK, wrapped
+# with instructor for validated structured output. anthropic[bedrock] pulls
+# boto3. The app boots and all non-AI features work WITHOUT these installed
+# (app/services/ai_service.py imports them lazily).
+anthropic[bedrock]==1.5.0
+instructor==1.17.0
