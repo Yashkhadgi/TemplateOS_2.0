@@ -1,0 +1,65 @@
+MD/
+Prompts/
+plan_md/
+.DS_Store
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+*.db
+venv/
+backend/storage/
+backend/__pycache__/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+backend/backend/
+
+# Node/React/Vite specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+coverage/
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
+
+# Local AI tool config
+opencode.json
+.opencode/
+AGENTS.md
+
+# Windows artifacts (e.g. accidental `2>nul` redirect files)
+nul
+
+# graphify knowledge graph output (generated, regenerable via /graphify)
+graphify-out/
+
+# Local scratch and large reference materials
+scratch_venv/
+TemplteOS_refferences/
+read_pdf*.py
+pdf_matches.txt
+
+# Imported attendance reference (local-only; may contain service config)
+TrackMyAttendance-main.zip
+output/attendance-integration/TrackMyAttendance-main/
+
+# Generated verification and document artifacts
+output/attendance-integration/*.xml
+output/docx/

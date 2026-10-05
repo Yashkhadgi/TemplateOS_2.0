@@ -1,0 +1,11 @@
+{
+  "name": "templateos",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev -w frontend",
+    "build:frontend": "npm run build -w frontend"
+  }
+}
